@@ -778,10 +778,30 @@ fieldset[disabled] .btn-success.active {
     color: white;
 }
 
+.botao-fixo{
+    left: 65%;
+    position: fixed;
+    top: 70%;
+    width: 230px;
+    box-shadow: 0 10px 20px -5px #94a6af;
+    border: 0;
+    z-index: 20;
+}
+
+.blinking{
+    animation:blinkingText 3s infinite;
+}
+@keyframes blinkingText{
+    0%{     background-color: #FFD14A;    }
+    49%{    background-color: #FFD14A; }
+    60%{    background-color: #E41E26; }
+    99%{    background-color:#E41E26;  }
+    100%{   background-color: #FFD14A;    }
+}
 
 /* mobile */
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 740px) {
     .pessoa-depoimento,
     .pessoa-depoimento-2 {
         width: 100px;
@@ -874,6 +894,22 @@ fieldset[disabled] .btn-success.active {
     .bloco-servico {
         height: 180px;
     }
+
+    .botao-fixo{
+        left: 60%;
+        top: 45%;
+        width: 100px;
+        font-weight: bold;
+        padding: 3%;
+    }
+
+    header .container {
+        padding-bottom: 100px;
+    }
+
+    .bloco-servico{
+        height: 250px;
+    }
 }
 
 .branco {
@@ -884,6 +920,12 @@ fieldset[disabled] .btn-success.active {
     background-color: white;
 }
 
+.fundo-vermelho{
+    background-color: #E41E26;
+    color: white;
+}
+
 .preto {
     color: #333;
 }
+
